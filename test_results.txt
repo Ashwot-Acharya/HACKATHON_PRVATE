@@ -1,0 +1,14 @@
+.....F......................................................
+======================================================================
+FAIL: test_length_matches_expected (tests.test_packet_agent.TestBeaconFeatures.test_length_matches_expected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ashwot/Projects/GIBL/tests/test_packet_agent.py", line 248, in test_length_matches_expected
+    self.assertEqual(len(arr), 46)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+AssertionError: 45 != 46
+
+----------------------------------------------------------------------
+Ran 60 tests in 7.044s
+
+FAILED (failures=1)

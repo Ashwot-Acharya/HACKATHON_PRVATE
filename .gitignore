@@ -1,0 +1,192 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+.myvenv/
+agents/__pycache__/
+__pycache__/
+intel/__pycache__/
+pipeline/__pycache__/
+
+
+
+# Data and Models
+# We ignore these directories because they contain large datasets (like CICIDS-2018 or CTU-13) 
+# and trained model files (.pkl, .pt) which are too large for standard git repositories 
+# and should be generated locally or hosted on cloud storage/LFS.
+data/
+models/
+
+# Logs
+logs/
+*.log
+
+# Forensics
+forensics/
+
+# Pytest
+.pytest_cache/
+
+# IDEs
+.vscode/
+.idea/
+
+# Local secrets and packaged artifacts
+.env
+*.zip
+scratch/
+
+# Frontend build output and local env files
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+### =========================
+### Python
+### =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+### =========================
+### Virtual environments
+### =========================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+*/venv/
+*/.venv/
+
+### =========================
+### Environment / secrets
+### =========================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+config/secrets*
+api_keys*
+
+### =========================
+### Node / Frontend
+### =========================
+node_modules/
+*/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.yarn/
+dist/
+build/
+.next/
+.cache/
+.parcel-cache/
+
+### =========================
+### ML Models, weights, checkpoints
+### =========================
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.onnx
+*.ckpt
+*.joblib
+*.model
+*.bin
+*.safetensors
+models/
+*/models/
+checkpoints/
+*/checkpoints/
+saved_models/
+weights/
+
+### =========================
+### Data files (datasets, logs, raw captures)
+### =========================
+*.csv
+*.tsv
+*.parquet
+*.jsonl
+data/
+*/data/
+datasets/
+raw_data/
+*.log
+*.zeek
+*.pcap
+*.pcapng
+
+### =========================
+### Jupyter
+### =========================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+### =========================
+### OS / Editor junk
+### =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+### =========================
+### Testing / coverage
+### =========================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+### =========================
+### Misc project artifacts
+### =========================
+*.tmp
+*.temp
+*.bak
+*.orig
+run_frontend.sh.log
+run_backend.sh.log

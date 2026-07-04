@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:80" # For scenario 2
+      - "8583:80" # For scenario 3
+    restart: always

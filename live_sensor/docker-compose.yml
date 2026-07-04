@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  banksentinel-sensor:
+    build: .
+    container_name: banksentinel-sensor
+    network_mode: "host"
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      - INTERFACE=wlp2s0
+      - API_URL=http://<YOUR_BACKEND_IP>:8000/pipeline/run
+      - BPF_FILTER=tcp or udp
+    restart: unless-stopped

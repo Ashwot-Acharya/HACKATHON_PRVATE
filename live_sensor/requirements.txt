@@ -1,0 +1,4 @@
+scapy>=2.5.0
+cicflowmeter>=0.1.6
+requests>=2.31.0
+python-dotenv>=1.0.0
